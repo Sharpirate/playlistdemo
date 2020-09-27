@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/6416ddcab0.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="fonts.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Playlist Builder</title>
+</head>
+
+<body>
+  <div id="showcase">
+    <div id="showcase-content">
+      <div class="container">
+        <div class="record" id="dontcry" draggable="true">
+          <div class="record-content">
+            <img src="233.jpg" alt="" draggable="false">
+            <p class="info">Guns N' Roses</p>
+            <p class="small">Don't Cry</p>
+          </div>
+        </div>
+        <div class="record" id="amaizing" draggable="true">
+          <div class="record-content">
+            <img src="ae.jpg" alt="" draggable="false">
+            <p class="info">Aerosmith</p>
+            <p class="small">Amaizing</p>
+
+          </div>
+        </div>
+        <div class="record" id="thetrooper" draggable="true">
+          <div class="record-content">
+            <img src="im.jpg" alt="" draggable="false">
+            <p class="info">Iron Maiden</p>
+            <p class="small">The Trooper</p>
+
+          </div>
+        </div>
+        <div class="record" id="missyou" draggable="true">
+          <div class="record-content">
+            <img src="sf.jpg" alt="" draggable="false">
+            <p class="info">Rolling Stones</p>
+            <p class="small">Miss You</p>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="control">
+        <p class="song-name">^ Select a Song ^</p>
+        <input id="progress" type="range" value="0" min="0" max="1" step="0.001">
+        <div class="controls">
+          <p class="time" id="current-time"></p>
+          <div class="icons">
+            <i class="music-prev" id="prev"></i>
+            <i class="music-play" id="play"></i>
+            <i class="music-next" id="next"></i>
+          </div>
+          <p class="time" id="duration"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <audio src="dontcry.mp3" id="audio"></audio>
+
+  <script src="main.js"></script>
+
+</body>
+
+</html>
